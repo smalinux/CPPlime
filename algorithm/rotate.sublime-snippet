@@ -1,0 +1,11 @@
+<snippet>
+	<description>std::rotate</description>
+	<content><![CDATA[
+- Warning : [ v.begin() , v.begin()+5 ) and [ v.begin()+5 , v.end() )
+std::rotate( ${1:v.begin()}, ${2:v.begin()+5}, ${3:v.end()});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rotate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

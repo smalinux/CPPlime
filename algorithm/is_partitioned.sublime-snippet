@@ -1,0 +1,18 @@
+<snippet>
+	<description>std::is_partitioned</description>
+	<content><![CDATA[
+bool ${5:is_ptd} = std::is_partitioned( ${1:v.begin()}, ${2:v.end()},
+[](int ${3:x}) {
+    ${4:return ${3:x} % 3 == 0;} // x == every element
+} );
+
+if ( ${5:is_ptd} )
+{
+    /* code */
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>is_partitioned</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<description>std::partition</description>
+	<content><![CDATA[
+- Check if Container not empty
+auto it_ptd = std::partition( ${1:v.begin()}, ${2:v.end()},
+[](int ${3:x}) {
+    ${4:return ${3:x} % 3 == 0;} // x == every element
+} );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>partition</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

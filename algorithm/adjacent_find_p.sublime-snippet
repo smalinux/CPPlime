@@ -1,0 +1,12 @@
+<snippet>
+	<description>   std::adjacent_find + BinaryPredicate</description>
+	<content><![CDATA[
+auto it_adj = adjacent_find( ${1:v.begin()}, ${2:v.end()}, [](int first, int next) {
+    return first == next;
+} );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>adjacent_find</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<description>  |  std::none_of  |  Checks if unary predicate p returns true for no elements in the range [first, last)</description>
+	<content><![CDATA[
+- Warning: Returns true if the range is empty.
+bool ${5:alOf} = none_of( ${1:v.begin()}, ${2:v.end()},
+[](int ${3:x}) {
+    ${4:return x >= 3;} // x == every element
+} );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>none_of</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

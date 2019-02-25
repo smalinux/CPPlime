@@ -1,0 +1,10 @@
+<snippet>
+	<description>   std::is_sorted | descending order</description>
+	<content><![CDATA[
+bool is_srt = is_sorted( ${1:v}.begin(), ${2:v}.end(), std::greater<int>() );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>is_sorted</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

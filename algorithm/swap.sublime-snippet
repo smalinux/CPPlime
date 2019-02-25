@@ -1,0 +1,12 @@
+<snippet>
+	<description>std::swap</description>
+	<content><![CDATA[
+${3:- swap values only. no iterators
+- retrun void}
+swap( ${1:T& a}, ${2:T& b} );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>swap</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<description>std::unique</description>
+	<content><![CDATA[
+${4:- (MUST) use coll.erase after ,, unique does not delete elems by itself!}
+auto it_unq = unique( ${1:v}.begin(), ${2:v}.end() );
+${3:v}.erase( it_unq, ${2:v}.end() );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>unique</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

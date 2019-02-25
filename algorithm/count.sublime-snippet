@@ -1,0 +1,11 @@
+<snippet>
+	<description>std::count</description>
+	<content><![CDATA[
+int i_count = std::count( ${1:v.begin()}, ${2:v.end()},		// Range
+${3:constValueTemplate} );								// Value
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>count</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

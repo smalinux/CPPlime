@@ -1,0 +1,10 @@
+<snippet>
+	<description>   std::is_sorted_until | descending order</description>
+	<content><![CDATA[
+auto it_srt = is_sorted_until( ${1:v}.begin(), ${2:v}.end(), std::greater<int>() );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>is_sorted_until</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

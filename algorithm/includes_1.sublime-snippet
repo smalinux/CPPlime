@@ -1,0 +1,13 @@
+<snippet>
+	<description>   std::includes | (BinaryPredicate)</description>
+	<content><![CDATA[
+bool icl = includes( ${1:a}.begin(), ${1:a}.end(), ${2:b}.begin(), ${2:b}.end(),
+	[](int ${3:a}, int ${4:b}) {
+		${5:return a < b;}
+} );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>includes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

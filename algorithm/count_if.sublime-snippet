@@ -1,0 +1,13 @@
+<snippet>
+	<description>std::count_if</description>
+	<content><![CDATA[
+int i_count = std::count_if( ${1:v.begin()}, ${2:v.end()},
+	[](int ${3:x}) {
+	    ${4:return x % 3 == 0;} // x == every element
+} );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>count_if</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

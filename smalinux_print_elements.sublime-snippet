@@ -1,0 +1,22 @@
+<snippet>
+	<description> | prints all elements in the container ... </description>
+	<content><![CDATA[
+${1:// smalinux_print_elements()
+// - all elements in the container: coll
+// - in one line. sparated by spaces
+template<typename T>
+inline void smalinux_print_elements( const T& coll, const std:: string& optstr="") {
+    std::cout << optstr;
+    for(const auto& i : coll) {
+        std::cout << i << ' ';
+    \}
+    std::cout << endl;
+\}}
+// calling
+smalinux_print_elements(${2:v}, "${3:Elements: }");
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>smalinux_print_elements</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

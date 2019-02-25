@@ -1,0 +1,11 @@
+<snippet>
+	<description>std::find</description>
+	<content><![CDATA[
+auto it_fd = std::find( ${1:v.begin()}, ${2:v.end()},		// Range
+${3:constValueTemplate} );									// Value
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>find</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
